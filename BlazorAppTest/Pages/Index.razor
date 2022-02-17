@@ -7,15 +7,16 @@
                 <div class="loginText mb-3 mt-2">
                     <p class="blockTitle"><strong> Entrar a la web</strong></p>
                     <label for="">Usuario:</label>
-                    <input type="text" name="user">
+                    <input type="text" class= "form-control" @bind="user">
                     <p>Contraseña:</p>
-                    <input type="text" name="pass" value="" class="mb-2">
-                    <button class="btn btn-primary" id="submitButton">Entrar</button>
+                    <input type="password" class="mb-2 form-control" @bind="pass">
+                    <p style="color:@Color"><b>@Text</b></p>
+                    <button class="btn btn-primary" id="submitButton" @onclick="login">Entrar</button>
                 </div>
                 <div class="loginLinks">
-                    <a href="www.google.com" target="_blank"> Zona de Alumnos</a>
-                    <a href="www.google.com" target="_blank"> Zona del profesor</a>
-                    <a href="www.google.com" target="_blank"> Acceso a calificaciones</a>
+                    <a href="http://www.google.com" target="_blank"> Zona de Alumnos</a>
+                    <a href="http://www.google.com" target="_blank"> Zona del profesor</a>
+                    <a href="http://www.google.com" target="_blank"> Acceso a calificaciones</a>
                 </div>
                 <hr style="border:1px dotted #d7d7d7; width:100%" />
                 <div>
@@ -24,19 +25,19 @@
                 <div class="loginLinks">
                     <ul>
                         <li>
-                            <a href="www.google.com" target="_blank"> Master en JavaScript</a>
+                            <a href="http://www.google.com" target="_blank"> Master en JavaScript</a>
                         </li>
                         <li>
-                            <a href="www.google.com" target="_blank"> Master en PHP</a>
+                            <a href="http://www.google.com" target="_blank"> Master en PHP</a>
                         </li>
                         <li>
-                            <a href="www.google.com" target="_blank"> Master en Frameworks</a>
+                            <a href="http://www.google.com" target="_blank"> Master en Frameworks</a>
                         </li>
                         <li>
-                            <a href="www.google.com" target="_blank"> Master en webs fullstacks</a>
+                            <a href="http://www.google.com" target="_blank"> Master en webs fullstacks</a>
                         </li>
                         <li>
-                            <a href="www.google.com" target="_blank"> victorroblresweb.es</a>
+                            <a href="http://www.google.com" target="_blank"> victorroblresweb.es</a>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +45,7 @@
                 <div>
                     <p>Frase del día:</p>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p><a href="www.google.com" target="_blank"> Leer más frases</a></p>
+                    <p><a href="http://www.google.com" target="_blank"> Leer más frases</a></p>
                 </div>
             </div>
             <div class="col-md-9 col-lg-8 mb-8 ml-5 contentBlock ">
@@ -54,7 +55,7 @@
                         <hr style="border:1px dotted #d7d7d7; width:100%" />
                         <ul>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -62,7 +63,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -70,7 +71,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -78,7 +79,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a>Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -86,7 +87,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a>Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -100,7 +101,7 @@
                         <hr style="border:1px dotted #d7d7d7; width:100%" />
                         <ul>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -108,7 +109,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -116,7 +117,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -124,7 +125,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -138,7 +139,7 @@
                         <hr style="border:1px dotted #d7d7d7; width:100%" />
                         <ul>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -146,7 +147,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -154,7 +155,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -162,7 +163,7 @@
                                 <p>[13-12-2013. Paco]</p>
                             </li>
                             <li>
-                                <p><strong>Título de la entrada</strong> Lorem ipsum dolor sit amet,
+                                <p><a href="http://www.google.com" target="_blank">Título de la entrada</a> Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit. Sed non maximus metus. Sed fringilla pellentesque
                                     feugiat. Praesent porta turpis vel pretium lacinia. Fusce ut est malesuada, blandit
                                     neque ac, vehicula ex. Nam pulvinar, enim vel consequat suscipit, purus tortor
@@ -174,8 +175,37 @@
                 </div>
             </div>
             <div class="footerText">
-                <p>[Ver histórico de noticias]</p>
+                <a href="http://www.google.com" target="_blank">[Ver histórico de noticias]</a>
             </div>
         </div>
     </div>
 </section>
+
+@code {
+
+    private string user  { get; set;}
+    private string pass  { get; set;}
+
+    string Color = "black";
+    string Text = "";
+
+
+    private void login()
+    {
+        if(user=="teleperformance" && pass == "qwerty987654*")
+        {
+            Color = "green";
+            Text = "Bienvenido Teleperformance";
+            user = "";
+            pass = "";
+        }
+        else
+        {
+            Color = "red";
+            Text = "Usuario o contraseña incorrecta";
+            user = "";
+            pass = "";
+        }
+    }
+}
+

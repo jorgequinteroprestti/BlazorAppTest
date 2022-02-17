@@ -8730,7 +8730,7 @@ fieldset:disabled .btn {
 
 .text-white {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    color: #FFFFFF !important;
 }
 
 .text-body {
@@ -8776,12 +8776,12 @@ fieldset:disabled .btn {
 
 .bg-primary {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+    background-color: #1abc9c !important;
 }
 
 .bg-secondary {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+    background-color: #343a40 !important;
 }
 
 .bg-success {
@@ -12515,4 +12515,5 @@ html {
 
 .copyright {
     background-color: #333333;
+    color: #FFFFFF !important;
 }
